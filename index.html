@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahamalar Seyahat Rehberi</title>
+    <style>
+        /* styles.css */
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        .header, .footer-menu {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .navbar ul, .footer-menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li, .footer-menu ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a, .footer-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border: 2px solid #fff;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar ul li a:hover, .footer-menu ul li a:hover {
+            background-color: #fff;
+            color: #007bff;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Explore Section Styles */
+        .explore {
+            padding: 50px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .explore h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .explore-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .explore-item {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .explore-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Activities Section Styles */
+        .activities {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .activities h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .activity-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .activity-item {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .activity-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery Section Styles */
+        .gallery {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Contact Section Styles */
+        .contact {
+            background-color: #007bff;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #f4f4f4;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCJuQRgWT6uAg0woBWJZFlaJEeLjwEYnlffP3dr5Qz9-rYSA0xrvIUMYNvXeyIjfLD8g&usqp=CAU" alt="logo" />
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#explore">Keşfet</a></li>
+                <li><a href="#activities">Aktiviteler</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="color: black;">Merhaba, Bahamalar'a Hoş Geldiniz!</h1>
+            <p style="color: black;">Masmavi suları, beyaz kumlu plajları ve doğal güzellikleriyle Bahamalar'ı keşfedin.</p>
+            <a href="#explore" class="btn">Daha Fazla Keşfet</a>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore">
+        <h2>Bahamalar'ı Keşfedin</h2>
+        <div class="explore-content">
+            <div class="explore-item">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/f3/9e/64/spiaggia-di-xanadu.jpg?w=500&h=500&s=1" alt="Plaj">
+                <h3>Plajlar</h3>
+                <p>Bahamalar'ın muhteşem plajlarında gün batımının keyfini çıkarın.</p>
+            </div>
+            <div class="explore-item">
+                <img src="https://image.elitema.com.tr/db_images/276/4/18/wrecks--reefs-on-grand-bahama-16_42148073182_o---kopya.jpg" alt="Dalış">
+                <h3>Dalış</h3>
+                <p>Sıra dışı deniz yaşamını keşfetmek için kristal berraklığındaki sulara dalın.</p>
+            </div>
+            <div class="explore-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/EFS_highres_STS091_STS091-731-32.JPG/1200px-EFS_highres_STS091_STS091-731-32.JPG" alt="Ada">
+                <h3>Adalar</h3>
+                <p>Farklı adalarda unutulmaz bir tatil deneyimi yaşayın.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <h2>Popüler Aktiviteler</h2>
+        <div class="activity-list">
+            <div class="activity-item">
+                <img src="https://bahamatur.wordpress.com/wp-content/uploads/2013/05/bahama1-620x465.jpg" alt="Şnorkelle Dalış">
+                <h3>Şnorkelle Dalış</h3>
+                <p>Renkli mercanlar ve egzotik balıklarla dolu suları keşfedin.</p>
+            </div>
+            <div class="activity-item">
+                <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2023/5/16/n4s1lq7lk7uga9sjdzia/griffin-colapinto-avustralya-the-box" alt="Sörf">
+                <h3>Sörf</h3>
+                <p>Bahamalar'ın dalgalarında heyecan dolu bir sörf deneyimi yaşayın.</p>
+            </div>
+            <div class="activity-item">
+                <img src="https://media.istockphoto.com/id/1362700893/tr/foto%C4%9Fraf/asian-man-golfing-on-the-course-in-summer.jpg?s=612x612&w=0&k=20&c=L8kalp1d1-vtqUmDfeHKL5j4fqb38D1-kcOpRee3K-M=" alt="Golf">
+                <h3>Golf</h3>
+                <p>Uluslararası standartlara sahip golf sahalarında sakin bir oyun oynayın.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Galeri</h2>
+        <div class="image-gallery">
+            <img src="https://media.gettyimages.com/id/155599041/photo/lonely-tropical-island-in-the-caribbean.jpg?s=612x612&w=0&k=20&c=dUhXdqBbq5_SANHErdZfqPwA0hdpPONuXjEzIlP3sjA=" alt="Galeri 1">
+            <img src="https://media.istockphoto.com/id/147049964/tr/foto%C4%9Fraf/morning-in-a-bahamas-beach.jpg?s=612x612&w=0&k=20&c=pTTwpVCLhX2pCh8Y8S_rF3oxQ95aJ435SNgn2Wguzj0=" alt="Galeri 2">
+            <img src="https://media.gettyimages.com/id/1150274867/photo/aerial-view-of-a-white-sand-cay-in-the-caribbean-sea-with-turquoise-waters.jpg?s=612x612&w=0&k=20&c=T2RPalFGVv4pEz-R-sycgA0R5zbWlkX-K2YTOykltFY=" alt="Galeri 3">
+            <img src="https://media.gettyimages.com/id/985694114/photo/nassau-bahamas.jpg?s=612x612&w=0&k=20&c=mIfVjoKcs0PQuvWJaADJswuxFU4QJqdC537SDYh976g=" alt="Galeri 4">
+            <img src="https://media.gettyimages.com/id/521401792/photo/paradise-island-nassau-bahamas.jpg?s=612x612&w=0&k=20&c=UMxQONDT2yAEHu6MQUXawEIXKrIgITNP01ojz9eJaMs=" alt="Galeri 5">
+            <img src="https://media.gettyimages.com/id/521106594/photo/paradise-island-nassau-bahamas.jpg?s=612x612&w=0&k=20&c=aj6YSCoABzkA9BJAf82kcSrvglmiX9oym6R2S-wGxI4=" alt="Galeri 6">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Bize Ulaşın</h2>
+        <div class="contact-form">
+            <form id="contactForm" action="send-email.php" method="POST">
+                <input type="text" name="name" placeholder="Adınız" required>
+                <input type="text" name="surname" placeholder="Soyadınız" required>
+                <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                <textarea name="message" placeholder="Mesajınız" required></textarea>
+                <button type="submit" class="btn">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Menu -->
+    <div class="footer-menu">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#explore">Keşfet</a></li>
+                <li><a href="#activities">Aktiviteler</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Bahamalar Seyahat Rehberi</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Formun normalde gönderilmesini engeller
+            alert('Mesajınız başarıyla gönderilmiştir. Teşekkür ederiz!');
+            document.getElementById('contactForm').reset(); // Form alanlarını temizler
+        });
+    </script>
+</body>
+</html>
